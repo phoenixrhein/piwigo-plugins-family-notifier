@@ -7,42 +7,14 @@ if (defined('PHPWG_ROOT_PATH') === false) {
 
 /**
  * class FamilyNotifierConfig
- *
  */
 class FamilyNotifierConfig
 {
-    public static $receivers = array(
-        array(
-            'email' => 'hohmannb@gmx.de',
+
+    public static $receivers = [
+        [
+            'email' => 'dummy@dummy.de',
             'enable' => true
-        ),
-        array(
-            'email' => 'sina.hohmann@gmx.de',
-            'enable' => false
-        ),
-        array(
-            'email' => 'noho123@gmx.de',
-            'enable' => false
-        ),
-        array(
-            'email' => 'heiho123@gmx.de',
-            'enable' => false
-        ),
-        array(
-            'email' => 'janina.wittke@gmx.de',
-            'enable' => false
-        ),
-        array(
-            'email' => 'lea.wittke@gmx.de',
-            'enable' => false
-        ),
-        array(
-            'email' => 'baerbel@gmx.de',
-            'enable' => false
-        ),
-        array(
-            'email' => 'detlef@gmx.de',
-            'enable' => false
-        ),
-    );
+        ]
+    ];
 }
