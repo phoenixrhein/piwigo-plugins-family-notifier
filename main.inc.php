@@ -1,8 +1,8 @@
 <?php
 // ############################################################################
-// * 
-// * Copyright (C) xt by hobutech 
-// * 
+// *
+// * Copyright (C) xt by hobutech
+// *
 // ############################################################################
 // *
 // * Plugin Name: Family Notifier
@@ -10,7 +10,9 @@
 // * Description: notify by e-mail about new photo albums
 // * Plugin URI: http://www.xovatec.de
 // * Author: xt
-// * Author URI: http://www.xovatec.de
+// * Author URI:
+// *
+// * http://www.hobutech.de
 // *
 // ****************************************************************************
 
@@ -30,19 +32,16 @@ class FamilyNotifierPluginMenu
 
     /**
      * Add menu entry
-     * 
+     *
      * @param array $menu
      * @return []
      */
     public function addMenuEntry($menu)
     {
-        array_push(
-            $menu,
-            [
-                'NAME'  => 'Familie benachrichtigen',
-                'URL'   => get_admin_plugin_menu_link(dirname(__FILE__)).'/admin.php'
-            ]
-        );
+        array_push($menu, [
+            'NAME' => 'Familie benachrichtigen',
+            'URL' => get_admin_plugin_menu_link(dirname(__FILE__)) . '/admin.php'
+        ]);
         return $menu;
     }
 }
@@ -51,5 +50,8 @@ load_language('plugin.lang', FAMILY_NOTIFIER_PLUGIN_PATH);
 
 $menu = new FamilyNotifierPluginMenu();
 
-add_event_handler('get_admin_plugin_menu_links', array($menu, 'addMenuEntry'));
+add_event_handler('get_admin_plugin_menu_links', array(
+    $menu,
+    'addMenuEntry'
+));
 ?>

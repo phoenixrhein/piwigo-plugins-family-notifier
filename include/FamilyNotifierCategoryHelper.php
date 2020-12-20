@@ -1,4 +1,9 @@
 <?php
+// ############################################################################
+// *
+// * Copyright (C) xt by hobutech
+// *
+// ############################################################################
 
 // Chech whether we are indeed included by Piwigo.
 if (defined('PHPWG_ROOT_PATH') === false) {
@@ -101,7 +106,8 @@ class FamilyNotifierCategoryHelper
     /**
      * Calculate time period
      *
-     * @param [][]
+     * @param
+     *            [][]
      */
     private function setTimePeriod(array $albumList)
     {
@@ -135,7 +141,7 @@ class FamilyNotifierCategoryHelper
                 }
             }
         }
-        
+
         return $albumList;
     }
 }
