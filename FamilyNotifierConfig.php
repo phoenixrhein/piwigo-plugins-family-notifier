@@ -25,38 +25,6 @@ class FamilyNotifierConfig
             'email' => 'dummy@dummy.de',
             'enable' => true
         ],
-        [
-            'email' => 'hohmannb@gmx.de',
-            'enable' => true
-        ],
-        [
-            'email' => 'sina.hohmann@gmx.de',
-            'enable' => false
-        ],
-        [
-            'email' => 'noho123@gmx.de',
-            'enable' => false
-        ],
-        [
-            'email' => 'heiho123@gmx.de',
-            'enable' => false
-        ],
-        [
-            'email' => 'janina.wittke@gmx.de',
-            'enable' => false
-        ],
-        [
-            'email' => 'lea.wittke@gmx.de',
-            'enable' => false
-        ],
-        [
-            'email' => 'baerbel@gmx.de',
-            'enable' => false
-        ],
-        [
-            'email' => 'detlef@gmx.de',
-            'enable' => false
-        ]
     ];
 
     /**
