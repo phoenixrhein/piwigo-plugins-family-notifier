@@ -87,7 +87,7 @@ class FamilyNotifierMailer
 
         $tpl = [
             'filename' => 'notifier_mail',
-            'dirname' => dirname(__FILE__) . DIRECTORY_SEPARATOR . 'mail',
+            'dirname' => dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'mail',
             'assign' => [
                 'albums' => $selectedAlbumList,
                 'derivative_params' => trigger_change('get_index_album_derivative_params', ImageStdParams::get_by_type(IMG_THUMB)),
@@ -147,7 +147,7 @@ class FamilyNotifierMailer
         $mailReceivers = $this->getMailReceivers();
 
         if (pwg_mail($mailReceivers, $args, $tpl) === false) {
-            $this->templateHelper->getTemplate()->assign('errer', array(
+            $this->templateHelper->getTemplate()->assign('errors', array(
                 'Beim Versand ist ein Fehler aufgetreten.'
             ));
             return;
