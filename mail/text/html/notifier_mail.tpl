@@ -6,7 +6,7 @@
 {foreach from=$albums item=album}
 {assign var=derivative value=$pwg->derivative($derivative_params, $album.src_image)}
 {strip}
-<p style="padding-top:15px;"><a href="{$url}{$album.url}">{$album.name} von {$album.date}</a></p>
+<p style="padding-top:15px;"><a href="{$url}{$album.url}">{$album.name} / {$album.date}</a></p>
 <p style="padding-top:0px;"><a href="{$url}{$album.url}"><img src="{$derivative->get_url()}" alt="{$album.name}" title="{$album.name}"></a></p>
 {/strip}
 {/foreach}
